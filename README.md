@@ -50,6 +50,7 @@ Validate predicted shifts using outcome-based ad hoc success criteria with a tem
 ## Results
 ### Win Probability Impact by Quarter
 ![Win Probability Max Change by Quarter](Thesis-WPQuarterDifferences.png)
+
 *Figure: Maximum win probability change varies significantly by quarter, motivating quarter-based weighting in the momentum score framework.*
 
 
