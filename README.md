@@ -53,6 +53,25 @@ Validate predicted shifts using outcome-based ad hoc success criteria with a tem
 
 *Figure: Maximum win probability change varies significantly by quarter, motivating quarter-based weighting in the momentum score framework.*
 
+### Assigned Momentum Changing Events
+![Momentum Changing Events and Impact](Thesis-AssignedMomentumChangingEvents.png)
+
+*Table: The events that were assigned as momentum changing events and their controlled impact values.*
+
+### Win Probability vs Momentum Scores Shape Comparison
+![WP vs Momentum Shape](Thesis-WPvsMomentumShape.png)
+
+*Figure: Comparison of the shape of Win Probability and Momentum Scores, with momentum shifts shown and the overall winner.*
+
+### Ensemble Combination Metrics
+![Ensemble Combination Metrics](Thesis-ModelResults.png)
+
+*Table: Different ensemble model combinations and their metric results.*
+
+### Number of Plays for Successful Event to occur after Momentum Shift
+![Ensemble Combination Metrics](Thesis-PlaysAfterShiftSuccess.png)
+
+*Figure: Plays after Momentum Shift for a defined successful event to occur.*
 
 ## Limitations/Future Improvements
 Define more events that are considered short term success in game context.
