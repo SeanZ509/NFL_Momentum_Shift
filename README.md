@@ -1,8 +1,37 @@
-# NFL_Momentum_Shift - Masters Thesis EWU
-A momentum-shift prediction model using play-by-play data over the course of 10 NFL seasons. Conducted exploratory data analysis to identify high-impact trends influencing momentum. Leveraged win probability models, XGBoost, and ensemble classifiers. Engineered over 40 features including a custom momentum score system, evaluated results using SHAP values and temporal performance windows, and validated findings using short-term success metrics. Demonstrated that momentum shifts could be predicted at a reliable rate, leading to successful outcomes over 60% of the time.
+# NFL Momentum Shift Modeling (Play-by-Play Analytics)
+## Executive Summary
+Momentum in NFL games is modeled as a measurable, non-random game dynamic that predicts short-term success rather than guaranteed wins. Using 10+ seasons of play-by-play data, I built a momentum score system based on weighted momentum-changing events informed by controlled win probability behavior. Multiple models were trained to predict momentum shifts, and an event-based ad hoc validation evaluated whether predicted shifts led to success events (score, defensive stop + possession, or sustained drive success). Results show momentum differs meaningfully from win probability: it builds progressively, can be gained by either team regardless of expected outcome, and can be stalled rather than fully lost. Predicted shifts were followed by a success event ~64% of the time, supporting that momentum-driven short-term success is not random.
+
+## Decision Context
+Goal: identify “momentum shift” moments that increase the likelihood of near-term success events (score, stop+possession, sustained drive).
+
+Intended use: decision support and game-flow context (not deterministic predictions of who wins).
+
+Why it matters: win probability is outcome-focused; momentum is designed to capture game control and short-term bursts that can inform strategy.
 
 
+## Dataset
 Dataset compiled of all seasons 2009 - 2019 from NFLFastR
-Hello
-To view the Thesis as a whole: https://www.overleaf.com/read/kvwydncnfzxr#43fa3f
+
+
+## Key Findings
+
+
+## Exploratory Insights
+
+
+## High-Level Approach
+
+
+## Results
+
+
+## Limitations/Future Improvements
+
+
+## Potential Uses
+
+
+## To view the Thesis as a whole: 
+https://dc.ewu.edu/theses/989/
 
