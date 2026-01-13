@@ -19,10 +19,18 @@ Context matters: one-score games and late-game situations show higher volatility
 Ensemble modeling improved detection: stacking increased recall to ~0.81 and F1 to ~0.66 vs standalone models.
 
 ## Exploratory Insights
-
+Impact varies by quarter: max WP swings were modest mid-game (often < 10% in Q2, Q3) but extreme early and late (often > ~80% in Q1, Q4), motivating quarter-based weighting.
+Game closeness drives volatility: one-score games produced the largest WP sensitivity, so event values were derived under controlled “competitive balance” conditions.
+Home/away asymmetry exists: away teams saw larger early WP gains for similar events; late-game shifts often favored home teams, motivating home/away and boost-case weights.
+Streaks amplify perceived control: consecutive scores/stops showed increasing WP effects, supporting streak-based scaling in momentum gains.
+"Big" plays, Quick Scores, and Sustained Drives: Often led to larger win probability swings, in team and fan views these are perceived as momentum gaining types of plays.
 
 ## High-Level Approach
-
+Explore WP behavior across contexts to quantify event impact under controlled conditions
+Create momentum event values + contextual weights (streak/score/quarter/home-away/boost/decay)
+Detect momentum shifts using a dynamic threshold (historical baseline + within-game scaling)
+Train models (XGBoost + stacked ensemble) to predict shift events
+Validate predicted shifts using outcome-based ad hoc success criteria with a temporal play window
 
 ## Results
 
