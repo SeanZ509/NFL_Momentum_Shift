@@ -13,6 +13,9 @@ Why it matters: win probability is outcome-focused; momentum is designed to capt
 ## Dataset
 Dataset compiled of all seasons 2009 - 2019 from NFLFastR
 
+Granularity: play-level
+
+Core context features: quarter/time remaining, score differential, home/away, streak states, event type, win probability.
 
 ## Key Findings
 
