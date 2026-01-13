@@ -37,25 +37,36 @@ Streaks amplify perceived control: consecutive scores/stops showed increasing WP
 "Big" plays, Quick Scores, and Sustained Drives: Often led to larger win probability swings, in team and fan views these are perceived as momentum gaining types of plays.
 
 ## High-Level Approach
-Explore WP behavior across contexts to quantify event impact under controlled conditions
+Explore WP behavior across contexts to quantify event impact under controlled conditions.
 
-Create momentum event values + contextual weights (streak/score/quarter/home-away/boost/decay)
+Create momentum event values + contextual weights (streak/score/quarter/home-away/boost/decay).
 
-Detect momentum shifts using a dynamic threshold (historical baseline + within-game scaling)
+Detect momentum shifts using a dynamic threshold (historical baseline + within-game scaling).
 
-Train models (XGBoost + stacked ensemble) to predict shift events
+Train models (XGBoost + stacked ensemble) to predict shift events.
 
-Validate predicted shifts using outcome-based ad hoc success criteria with a temporal play window
+Validate predicted shifts using outcome-based ad hoc success criteria with a temporal play window.
 
 ## Results
 
 
 ## Limitations/Future Improvements
+Define more events that are considered short term success in game context.
 
+More features such as weather, injuries, timeouts, team strength, previous game momentum scores, special teams plays could improve results further and bring more insights.
+
+Carry over momentum scores into the next game throughout seasons to better reflect real world momentum views.
+
+Reduce feature engineering complexity by consolidating correlated event-based and contextual features into a smaller set of higher-level indicators. This would improve robustness, reduce sensitivity to noisy play-level signals, and enable faster real-time evaluation without sacrificing interpretability.
 
 ## Potential Uses
+Coaches could use to determine when to change aggression and formations with play calling.
 
+Dynamic real time changes to help change live sports betting odds.
 
-## To view the Thesis as a whole: 
-https://dc.ewu.edu/theses/989/
+Enhance viewing experience by showing teams gaining and losing momentum, could predict big plays or changes in game will happen soon.
+
+Improvements to other models for player impact, AI game simulations, and team success forecasting.
+
+## Full thesis text and figures: https://dc.ewu.edu/theses/989/
 
