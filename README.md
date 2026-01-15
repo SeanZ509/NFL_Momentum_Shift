@@ -3,18 +3,14 @@
 Momentum in NFL games is modeled as a measurable, non-random game dynamic that predicts short-term success rather than guaranteed wins. Using 10+ seasons of play-by-play data, I built a momentum score system based on weighted momentum-changing events informed by controlled win probability behavior. Multiple models were trained to predict momentum shifts, and an event-based ad hoc validation evaluated whether predicted shifts led to success events (score, defensive stop + possession, or sustained drive success). Results show momentum differs meaningfully from win probability: it builds progressively, can be gained by either team regardless of expected outcome, and can be stalled rather than fully lost. Predicted shifts were followed by a success event ~64% of the time, supporting that momentum-driven short-term success is not random.
 
 ## Decision Context
-Goal: identify “momentum shift” moments that increase the likelihood of near-term success events (score, stop+possession, sustained drive).
-
-Intended use: decision support and game-flow context (not deterministic predictions of who wins).
-
-Why it matters: win probability is outcome-focused; momentum is designed to capture game control and short-term bursts that can inform strategy.
+- Goal: identify “momentum shift” moments that increase the likelihood of near-term success events (score, stop+possession, sustained drive).
+- Intended use: decision support and game-flow context (not deterministic predictions of who wins).
+- Why it matters: win probability is outcome-focused, momentum is designed to capture game control and short-term bursts that can inform strategy.
 
 ## Dataset
-Dataset compiled of all seasons 2009 - 2019 from NFLFastR
-
-Granularity: play-level
-
-Core context features: quarter/time remaining, score differential, home/away, streak states, event type, win probability.
+- Dataset compiled of all seasons 2009 - 2019 from NFLFastR
+- Granularity: play-level
+- Core context features: quarter/time remaining, score differential, home/away, streak states, event type, win probability.
 
 ## Key Findings
 Momentum is distinct from win probability: similar shape, but diverges because WP heavily weights time/score; momentum down-weights endgame effects to measure game control.
